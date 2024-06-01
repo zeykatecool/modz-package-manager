@@ -1,0 +1,37 @@
+{    
+    name = "JitKeyboard",
+    version = "0.0.1",
+    description = "JITKEYBOARD";
+    tags = {"keyboard"};
+    authors = {
+        "zeyk"
+    };
+
+    onStart = {
+        [1] = {
+            message = "Installing from GITHUB",
+        };
+    };
+
+    install = {
+        [1] = {
+            DOWNLOAD = {
+                link = "https://raw.githubusercontent.com/zeykatecool/jit-keyboard/main/mainKeyboard.lua",
+                path = "C:\\Users\\saitd\\Desktop\\proje",
+                filename = "mainKeyboard.lua",
+            };
+        };
+        [2] = {
+            COMMAND = {
+                [1] = {
+                    cmd = "echo test",
+                    options = {};
+                    onError = {
+                        message = "TEST_TEST",
+                        exit = FORCE_EXIT
+                    };
+                };
+            };
+        };
+    };
+};

@@ -1,0 +1,14 @@
+{
+    ModZ_Version = "v0.1",
+    packages_downloaded = {
+        Example_Package = {
+            path = "PATHHERE",
+            name = "Example_Package",
+            description = "An example package",
+            version = "v0.1",
+            authors = {
+                "zeyk"
+            },
+        },
+    },
+}
